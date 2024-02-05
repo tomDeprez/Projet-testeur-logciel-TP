@@ -1,12 +1,12 @@
 # Projet-testeur-logciel-TP
 ## Exercice 1 : Fonctionnalité : Connexion et Inscription
 
-Début : L'utilisateur arrive sur la page d'accueil et a le choix entre "Se connecter" et "S'inscrire".
+### Début : L'utilisateur arrive sur la page d'accueil et a le choix entre "Se connecter" et "S'inscrire".
 
-Choix de l'utilisateur : L'utilisateur choisit soit de se connecter soit de s'inscrire.
+### Choix de l'utilisateur : L'utilisateur choisit soit de se connecter soit de s'inscrire.
 
-•	Si l'utilisateur choisit de se connecter :
-o	Demander l'adresse email et le mot de passe.
+### •	Si l'utilisateur choisit de se connecter :
+#### o	Demander l'adresse email et le mot de passe.
 o	Vérifier si les informations sont valides.
 	Si les informations sont valides, rediriger vers la page d'accueil utilisateur.
 	Sinon, afficher un message d'erreur et permettre une nouvelle tentative.
