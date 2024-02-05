@@ -7,15 +7,24 @@
 
 ### •	Si l'utilisateur choisit de se connecter :
 #### o	Demander l'adresse email et le mot de passe.
+
 o	Vérifier si les informations sont valides.
+
 	Si les informations sont valides, rediriger vers la page d'accueil utilisateur.
+
 	Sinon, afficher un message d'erreur et permettre une nouvelle tentative.
+
 •	Si l'utilisateur choisit de s'inscrire :
+
 o	Demander les informations nécessaires (nom, email, mot de passe, confirmation du mot de passe, etc.).
+
 o	Vérifier la validité des informations (format de l'email, force du mot de passe, correspondance des mots de passe).
+
 	Si les informations sont valides, créer le compte et rediriger vers la page d'accueil utilisateur.
+
 	Sinon, afficher un message d'erreur et demander de corriger les informations.
-Fin : L'utilisateur est soit connecté et redirigé vers sa page d'accueil, soit en train de corriger ses informations d'inscription.
+
+## Fin : L'utilisateur est soit connecté et redirigé vers sa page d'accueil, soit en train de corriger ses informations d'inscription.
 
 
 
