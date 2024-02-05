@@ -1,5 +1,5 @@
-﻿# Projet-testeur-logciel-TP
-﻿#﻿# Exercice 1 : Fonctionnalité : Connexion et Inscription
+﻿#Projet-testeur-logciel-TP
+﻿#﻿#Exercice 1 : Fonctionnalité : Connexion et Inscription
 
 Début : L'utilisateur arrive sur la page d'accueil et a le choix entre "Se connecter" et "S'inscrire".
 
