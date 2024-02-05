@@ -39,7 +39,7 @@ Contexte :
 Vous travaillez sur un système e-commerce qui permet aux utilisateurs de passer des commandes pour différents produits.
 La fonctionnalité de gestion de commandes inclut la sélection de produits, la validation du panier, le choix des options de livraison, et la confirmation de la commande avec un résumé des coûts.
 
-Fonctionnalité : Gestion de Commandes
+### Fonctionnalité : Gestion de Commandes
 
 Début : L'utilisateur navigue sur le site et ajoute des produits à son panier.
 Vérification du Panier :
