@@ -1,5 +1,5 @@
-﻿# Projet-testeur-logciel-TP
-﻿#﻿## Exercice 1 : Fonctionnalité : Connexion et Inscription
+# Projet-testeur-logciel-TP
+## Exercice 1 : Fonctionnalité : Connexion et Inscription
 
 Début : L'utilisateur arrive sur la page d'accueil et a le choix entre "Se connecter" et "S'inscrire".
 
@@ -25,7 +25,7 @@ Fin : L'utilisateur est soit connecté et redirigé vers sa page d'accueil, soit
 
 
 
-Exercice 2 : Fonctionnalité de Gestion de Commandes avec Validation et Confirmation
+## Exercice 2 : Fonctionnalité de Gestion de Commandes avec Validation et Confirmation
 Contexte :
 Vous travaillez sur un système e-commerce qui permet aux utilisateurs de passer des commandes pour différents produits. La fonctionnalité de gestion de commandes inclut la sélection de produits, la validation du panier, le choix des options de livraison, et la confirmation de la commande avec un résumé des coûts.
 
