@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion et Inscription</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Connexion</h2>
+        <div id="loginSuccess" class="alert alert-success" style="display: none;"></div>
+        <div id="loginError" class="alert alert-danger" style="display: none;"></div>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="loginEmail">Adresse Email</label>
+            <input type="email" class="form-control" id="loginEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Mot de passe</label>
+            <input type="password" class="form-control" id="loginPassword" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Se connecter</button>
+        </form>
+        <div id="loginError" class="alert alert-danger mt-2" style="display: none;"></div>
+      </div>
+      <div class="col-md-6">
+        <h2>Inscription</h2>
+        <div id="registerSuccess" class="alert alert-success" style="display: none;"></div>
+        <div id="registerError" class="alert alert-danger" style="display: none;"></div>
+        <form id="registerForm">
+          <div class="form-group">
+            <label for="registerEmail">Adresse Email</label>
+            <input type="email" class="form-control" id="registerEmail" required>
+          </div>
+          <div class="form-group">
+            <label for="registerPassword">Mot de passe</label>
+            <input type="password" class="form-control" id="registerPassword" required>
+          </div>
+          <div class="form-group">
+            <label for="registerPasswordConfirm">Confirmation du mot de passe</label>
+            <input type="password" class="form-control" id="registerPasswordConfirm" required>
+          </div>
+          <button type="submit" class="btn btn-success">S'inscrire</button>
+        </form>
+        <div id="registerError" class="alert alert-danger mt-2" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script/script.js"></script> <!-- Assurez-vous que ce fichier script.js est correctement lié -->
+</body>
+
+</html>

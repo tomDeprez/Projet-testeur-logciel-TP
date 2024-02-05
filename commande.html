@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion des Commandes</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h2>Vérification du Panier</h2>
+    <button id="checkCart" class="btn btn-primary">Vérifier le Panier</button>
+    <div id="cartMessage" class="mt-3"></div>
+
+    <h2>Options de Livraison</h2>
+    <select id="deliveryOptions" class="form-control mt-3 mb-3">
+      <option value="standard">Standard - 5€</option>
+      <option value="express">Express - 10€</option>
+      <option value="pickup">Retrait en Magasin - Gratuit</option>
+    </select>
+
+    <h2>Informations de Livraison</h2>
+    <input type="text" id="fullName" class="form-control mt-3" placeholder="Nom complet">
+    <input type="text" id="deliveryAddress" class="form-control mt-3" placeholder="Adresse de Livraison">
+    <input type="tel" id="phoneNumber" class="form-control mt-3" placeholder="Numéro de téléphone">
+    <textarea id="orderComments" class="form-control mt-3"
+      placeholder="Commentaires pour la commande (facultatif)"></textarea>
+
+    <div id="validationMessage" class="mt-3"></div>
+    <button id="validateOrder" class="btn btn-success mt-3">Valider la Commande</button>
+
+    <div id="orderSummary" class="mt-5" style="display: none;"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script/orderManagement.js"></script> <!-- Assurez-vous que ce fichier est correctement lié -->
+</body>
+
+</html>
