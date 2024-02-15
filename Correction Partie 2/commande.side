@@ -1,0 +1,771 @@
+{
+  "id": "269ede24-25d5-4346-a61a-c063b87602be",
+  "version": "2.0",
+  "name": "commande",
+  "url": "http://localhost/Projet-testeur-logciel-TP/produits.html",
+  "tests": [{
+    "id": "92cce4c1-1a48-4741-a4c5-bf470428f619",
+    "name": "Panier vide vérification",
+    "commands": [{
+      "id": "1afb9ae2-ebb4-4303-823b-26d8bc347dc4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/produits.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ca9957f-7c58-41c7-b403-33338e631796",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c924a20-f7e0-4391-88a7-a7f9dfdc3dc6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mon panier",
+      "targets": [
+        ["linkText=Mon panier", "linkText"],
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mon panier')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'commande.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mon panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b29d75a-9cbd-4c4f-9caa-06919b762062",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkCart",
+      "targets": [
+        ["id=checkCart", "id"],
+        ["css=#checkCart", "css:finder"],
+        ["xpath=//button[@id='checkCart']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Vérifier le Panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ab683f0-05a8-473b-8ab0-d2ddd292a73a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [],
+      "value": "Votre panier est vide. Veuillez ajouter des produits avant de continuer."
+    }]
+  }, {
+    "id": "476b975d-8855-4f12-bc48-6f3edb832c6f",
+    "name": "Panier contient des articles",
+    "commands": [{
+      "id": "0a13a7eb-8cc2-4a28-87ef-cd8d1fcfbf58",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/produits.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1b9f3e6-7d86-4641-95ae-f8e04e2f9c50",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f9d5a10-e0be-42dd-b0bf-990e582a22a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) .btn",
+      "targets": [
+        ["css=.card:nth-child(1) .btn", "css:finder"],
+        ["xpath=//div[@id='productList']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter au panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0353f401-e5f5-46ea-a35b-f4b7f061364e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mon panier",
+      "targets": [
+        ["linkText=Mon panier", "linkText"],
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mon panier')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'commande.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mon panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2aa534cf-b7fc-44f9-a497-2efce0bf9e02",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkCart",
+      "targets": [
+        ["id=checkCart", "id"],
+        ["css=#checkCart", "css:finder"],
+        ["xpath=//button[@id='checkCart']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Vérifier le Panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcd03e1d-56b3-4646-9841-9893d5c847cf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [],
+      "value": "Votre panier contient 1 article(s). Veuillez choisir une option de livraison."
+    }]
+  }, {
+    "id": "7b5bc546-8a98-4c56-8325-31dbfdaf4bad",
+    "name": "Commande validée avec succès",
+    "commands": [{
+      "id": "68d4c939-ca20-4e2b-ba24-9465ddece4e4",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/produits.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68756c09-d9f1-4579-9b27-5a25a9e29fbe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88ca75db-c9c9-4a38-9b60-9ec2c2bd4ce0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) .btn",
+      "targets": [
+        ["css=.card:nth-child(1) .btn", "css:finder"],
+        ["xpath=//div[@id='productList']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter au panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60417e7c-bb9d-457d-ba4e-7e8a3e1871f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mon panier",
+      "targets": [
+        ["linkText=Mon panier", "linkText"],
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mon panier')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'commande.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mon panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50f2cc39-fd92-4578-8e45-4c3c8013252d",
+      "comment": "",
+      "command": "click",
+      "target": "id=fullName",
+      "targets": [
+        ["id=fullName", "id"],
+        ["css=#fullName", "css:finder"],
+        ["xpath=//input[@id='fullName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2c15fb9-4f17-412b-9acd-369126d50cd2",
+      "comment": "",
+      "command": "type",
+      "target": "id=fullName",
+      "targets": [
+        ["id=fullName", "id"],
+        ["css=#fullName", "css:finder"],
+        ["xpath=//input[@id='fullName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Deprez"
+    }, {
+      "id": "89b254d3-48d7-4d89-af8b-25a1f08314f9",
+      "comment": "",
+      "command": "click",
+      "target": "id=deliveryAddress",
+      "targets": [
+        ["id=deliveryAddress", "id"],
+        ["css=#deliveryAddress", "css:finder"],
+        ["xpath=//input[@id='deliveryAddress']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a54b9f6-d67f-4cb4-8a3d-e192d1211444",
+      "comment": "",
+      "command": "type",
+      "target": "id=deliveryAddress",
+      "targets": [
+        ["id=deliveryAddress", "id"],
+        ["css=#deliveryAddress", "css:finder"],
+        ["xpath=//input[@id='deliveryAddress']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "64 lyon 38"
+    }, {
+      "id": "be99b8ec-a3ec-4a7a-bfe7-3e617d7d42ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05079d88-3218-4ad0-b678-7e50bbc3a79f",
+      "comment": "",
+      "command": "type",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0661682170"
+    }, {
+      "id": "f8f0aaca-4902-430b-b355-42a4b0130633",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderComments",
+      "targets": [
+        ["id=orderComments", "id"],
+        ["css=#orderComments", "css:finder"],
+        ["xpath=//textarea[@id='orderComments']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25513c1b-0710-45b5-b26e-d1e9c0e24e62",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderComments",
+      "targets": [
+        ["id=orderComments", "id"],
+        ["css=#orderComments", "css:finder"],
+        ["xpath=//textarea[@id='orderComments']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Commentaire de test"
+    }, {
+      "id": "bbcc2b06-e572-48c4-bf89-4a22aafe71ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=validateOrder",
+      "targets": [
+        ["id=validateOrder", "id"],
+        ["css=#validateOrder", "css:finder"],
+        ["xpath=//button[@id='validateOrder']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Valider la Commande')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1d4c086-8c8f-4d46-91a4-6bb3cc59d53e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.alert",
+      "targets": [
+        ["css=.alert", "css:finder"],
+        ["xpath=//div[@id='orderSummary']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": "Commande validée avec succès. Option de livraison : standard, frais de livraison : 5€. Adresse de livraison : 64 lyon 38. Un numéro de commande vous sera envoyé."
+    }]
+  }, {
+    "id": "a117ae36-67de-48b1-91d5-32f6fecaa827",
+    "name": "Produit ajouté au panier avec succès",
+    "commands": [{
+      "id": "6d53ccf8-9c30-49ca-8bbd-2cb91a4c4092",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/produits.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1d18fb7-decb-4452-9ab0-0761f4410641",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cec5c83-ca3f-4df3-902e-6fc47203368a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) .btn",
+      "targets": [
+        ["css=.card:nth-child(1) .btn", "css:finder"],
+        ["xpath=//div[@id='productList']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter au panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a70cca6-1f79-4e03-a76c-907f429a22a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=cartStatus",
+      "targets": [
+        ["id=cartStatus", "id"],
+        ["css=#cartStatus", "css:finder"],
+        ["xpath=//div[@id='cartStatus']", "xpath:attributes"],
+        ["xpath=//div[3]", "xpath:position"]
+      ],
+      "value": "Produit ajouté au panier avec succès!"
+    }]
+  }, {
+    "id": "882caf5f-c823-4d70-9ecb-2bc94cda0a5c",
+    "name": "Validation commande avec nom manquant",
+    "commands": [{
+      "id": "f537a6d2-efbc-451b-8dbe-bf26ff3d69ca",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/produits.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "327ae4ca-f898-401b-9284-1d750a58ede0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8804a320-8aea-4673-a08d-77bc95d1cfcd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) .btn",
+      "targets": [
+        ["css=.card:nth-child(1) .btn", "css:finder"],
+        ["xpath=//div[@id='productList']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter au panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "494226b9-5dad-49f1-97f7-6af88f7a1967",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mon panier",
+      "targets": [
+        ["linkText=Mon panier", "linkText"],
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mon panier')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'commande.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mon panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1949c64c-9bba-424f-9e4a-4c66a004bbd6",
+      "comment": "",
+      "command": "click",
+      "target": "id=deliveryAddress",
+      "targets": [
+        ["id=deliveryAddress", "id"],
+        ["css=#deliveryAddress", "css:finder"],
+        ["xpath=//input[@id='deliveryAddress']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9698d76b-772a-48dd-8ee6-ef6f2a1b3943",
+      "comment": "",
+      "command": "type",
+      "target": "id=deliveryAddress",
+      "targets": [
+        ["id=deliveryAddress", "id"],
+        ["css=#deliveryAddress", "css:finder"],
+        ["xpath=//input[@id='deliveryAddress']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "lyon 69000"
+    }, {
+      "id": "7fdd2f71-3a55-4cbe-8e43-df2a9aab5968",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2cb929f-8524-4652-a9da-3fdeac2f656e",
+      "comment": "",
+      "command": "type",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0661682170"
+    }, {
+      "id": "8290e706-2037-402e-b103-558f24374bb6",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderComments",
+      "targets": [
+        ["id=orderComments", "id"],
+        ["css=#orderComments", "css:finder"],
+        ["xpath=//textarea[@id='orderComments']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "967d92ed-6d9b-4d06-8182-4ee37d141fd2",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderComments",
+      "targets": [
+        ["id=orderComments", "id"],
+        ["css=#orderComments", "css:finder"],
+        ["xpath=//textarea[@id='orderComments']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "844ac472-d9af-4e6d-885e-53d4090c3954",
+      "comment": "",
+      "command": "click",
+      "target": "id=validateOrder",
+      "targets": [
+        ["id=validateOrder", "id"],
+        ["css=#validateOrder", "css:finder"],
+        ["xpath=//button[@id='validateOrder']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Valider la Commande')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da4bf820-70dc-4850-ab0b-25b929aa56be",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [],
+      "value": "Veuillez saisir un nom complet."
+    }]
+  }, {
+    "id": "fc49a143-000d-47a9-83ed-9374028535fc",
+    "name": "Validation commande avec adresse manquante",
+    "commands": [{
+      "id": "d05f33ab-00dc-47ae-b176-644858e27d03",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/produits.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ea2d71b-ebcd-45c4-aa7e-92c58a8e3f33",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80b9f909-6791-40f7-9adb-a80b9682a2e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) .btn",
+      "targets": [
+        ["css=.card:nth-child(1) .btn", "css:finder"],
+        ["xpath=//div[@id='productList']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter au panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1440686f-f944-4ba0-baa4-8e596ba52a8a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mon panier",
+      "targets": [
+        ["linkText=Mon panier", "linkText"],
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mon panier')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'commande.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mon panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62c283c4-62a4-4633-bed4-16a3ac8b7967",
+      "comment": "",
+      "command": "click",
+      "target": "id=fullName",
+      "targets": [
+        ["id=fullName", "id"],
+        ["css=#fullName", "css:finder"],
+        ["xpath=//input[@id='fullName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a883b56c-b47c-4ae9-8f87-488a5f6bcd4c",
+      "comment": "",
+      "command": "type",
+      "target": "id=fullName",
+      "targets": [
+        ["id=fullName", "id"],
+        ["css=#fullName", "css:finder"],
+        ["xpath=//input[@id='fullName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "deprez"
+    }, {
+      "id": "517901e7-2bde-41fe-9b41-14b2267de2ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "258eaaa1-3c91-4f4f-bb1d-6476574a8aa4",
+      "comment": "",
+      "command": "type",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "0661682170"
+    }, {
+      "id": "c88de99a-fae8-41d5-8abc-57d1c6708b12",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderComments",
+      "targets": [
+        ["id=orderComments", "id"],
+        ["css=#orderComments", "css:finder"],
+        ["xpath=//textarea[@id='orderComments']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee1629a9-d240-4aa3-8656-325e477c41b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderComments",
+      "targets": [
+        ["id=orderComments", "id"],
+        ["css=#orderComments", "css:finder"],
+        ["xpath=//textarea[@id='orderComments']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "227ca9b4-9d7d-4e75-b4d2-0ae9366001e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=validateOrder",
+      "targets": [
+        ["id=validateOrder", "id"],
+        ["css=#validateOrder", "css:finder"],
+        ["xpath=//button[@id='validateOrder']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Valider la Commande')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "adc125d1-6a79-42cc-82e9-90d1ad72903e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [],
+      "value": "Veuillez saisir une adresse de livraison valide."
+    }]
+  }, {
+    "id": "8dff372a-ab5a-4bfd-8faf-20003950b234",
+    "name": "Validation commande avec numéro de téléphone invalide",
+    "commands": [{
+      "id": "ca10d508-8c66-4bf7-afd9-c319a047ed28",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/produits.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e48e1fa-f7a6-46f8-a4a6-cbda30a3f696",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35857f88-310e-4236-8ba7-59953882498f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) .btn",
+      "targets": [
+        ["css=.card:nth-child(1) .btn", "css:finder"],
+        ["xpath=//div[@id='productList']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Ajouter au panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "783bda1e-d486-4456-9c69-492af96348c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mon panier",
+      "targets": [
+        ["linkText=Mon panier", "linkText"],
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mon panier')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'commande.html')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mon panier')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b596d626-a847-41ac-b58e-18c140e3e9c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=fullName",
+      "targets": [
+        ["id=fullName", "id"],
+        ["css=#fullName", "css:finder"],
+        ["xpath=//input[@id='fullName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4aab272-1444-444b-aa34-69509604805d",
+      "comment": "",
+      "command": "type",
+      "target": "id=fullName",
+      "targets": [
+        ["id=fullName", "id"],
+        ["css=#fullName", "css:finder"],
+        ["xpath=//input[@id='fullName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Deprez"
+    }, {
+      "id": "6e21977a-b3c8-4048-a875-cc67e8643bf6",
+      "comment": "",
+      "command": "click",
+      "target": "id=deliveryAddress",
+      "targets": [
+        ["id=deliveryAddress", "id"],
+        ["css=#deliveryAddress", "css:finder"],
+        ["xpath=//input[@id='deliveryAddress']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "229b978a-4ff0-4ec1-80ef-715922faf1d8",
+      "comment": "",
+      "command": "type",
+      "target": "id=deliveryAddress",
+      "targets": [
+        ["id=deliveryAddress", "id"],
+        ["css=#deliveryAddress", "css:finder"],
+        ["xpath=//input[@id='deliveryAddress']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Lyon 69000"
+    }, {
+      "id": "238c126b-9ee0-4d9c-80c8-c4d606194a0d",
+      "comment": "",
+      "command": "click",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "424a0324-d86b-4440-9ce0-42d6d1b47b70",
+      "comment": "",
+      "command": "type",
+      "target": "id=phoneNumber",
+      "targets": [
+        ["id=phoneNumber", "id"],
+        ["css=#phoneNumber", "css:finder"],
+        ["xpath=//input[@id='phoneNumber']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "azerty"
+    }, {
+      "id": "b7b3df00-45ba-44b4-b068-b9ad416ca71d",
+      "comment": "",
+      "command": "click",
+      "target": "id=orderComments",
+      "targets": [
+        ["id=orderComments", "id"],
+        ["css=#orderComments", "css:finder"],
+        ["xpath=//textarea[@id='orderComments']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "544be7ac-4490-4552-8b25-a142013cea65",
+      "comment": "",
+      "command": "type",
+      "target": "id=orderComments",
+      "targets": [
+        ["id=orderComments", "id"],
+        ["css=#orderComments", "css:finder"],
+        ["xpath=//textarea[@id='orderComments']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "39ba5729-0de0-4d90-a2ff-237c5a391481",
+      "comment": "",
+      "command": "click",
+      "target": "id=validateOrder",
+      "targets": [
+        ["id=validateOrder", "id"],
+        ["css=#validateOrder", "css:finder"],
+        ["xpath=//button[@id='validateOrder']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Valider la Commande')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b913c88-d89d-4036-a571-22855fa5f84e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.alert",
+      "targets": [],
+      "value": "Veuillez saisir un numéro de téléphone valide."
+    }]
+  }],
+  "suites": [{
+    "id": "405b4231-81f3-4263-a45e-b72d94964fc8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["92cce4c1-1a48-4741-a4c5-bf470428f619", "7b5bc546-8a98-4c56-8325-31dbfdaf4bad", "476b975d-8855-4f12-bc48-6f3edb832c6f", "a117ae36-67de-48b1-91d5-32f6fecaa827", "fc49a143-000d-47a9-83ed-9374028535fc", "882caf5f-c823-4d70-9ecb-2bc94cda0a5c"]
+  }],
+  "urls": ["http://localhost/Projet-testeur-logciel-TP/produits.html"],
+  "plugins": []
+}
