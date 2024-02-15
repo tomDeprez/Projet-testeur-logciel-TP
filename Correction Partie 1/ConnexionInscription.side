@@ -1,0 +1,458 @@
+{
+  "id": "13f44f1b-598f-41bb-8848-339b893d38ae",
+  "version": "2.0",
+  "name": "ConnexionInscription",
+  "url": "http://localhost/Projet-testeur-logciel-TP/",
+  "tests": [{
+    "id": "072263ad-64f3-4bc2-b000-825b6566a618",
+    "name": "Connexion OK",
+    "commands": [{
+      "id": "fbe04351-4974-47e4-889d-48f447f09d96",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f120093-a699-452c-9dfe-ef7bbfcb574d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1319872a-f20b-43bf-a3e1-e83f2289cb7c",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a828d42-f1f9-413e-adea-ddfc30fbc4f3",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "it@example.com"
+    }, {
+      "id": "f20578cb-71e5-46bb-83d7-063cee792f0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "08730a7e-cb3e-4207-a89a-61d436caebcc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Se connecter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f61fdebf-fe31-4a86-bab4-59ed95338df3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=loginSuccess",
+      "targets": [],
+      "value": "Connexion réussie. Redirection vers la page d'accueil."
+    }]
+  }, {
+    "id": "035c409d-6800-4519-b3d4-43b5bbd15428",
+    "name": "Connexion KO",
+    "commands": [{
+      "id": "98293dc0-a3c2-4921-8df9-22e107c85530",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fc16a35-76ad-4430-bb74-0b2772ce3c8a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6eba3a3-7936-4513-8866-367d354e990e",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef3f4d46-6018-46ba-9ef7-025429993fb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginEmail",
+      "targets": [
+        ["id=loginEmail", "id"],
+        ["css=#loginEmail", "css:finder"],
+        ["xpath=//input[@id='loginEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tom@test.fr"
+    }, {
+      "id": "df291093-26b5-457f-9d49-d1eb2c20006a",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginPassword",
+      "targets": [
+        ["id=loginPassword", "id"],
+        ["css=#loginPassword", "css:finder"],
+        ["xpath=//input[@id='loginPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "18df0ed2-6a8e-4527-b17a-c119fd5a0781",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Se connecter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d93f843-144a-4896-8b39-d3788f99b07b",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=loginError",
+      "targets": [],
+      "value": "Informations de connexion invalides."
+    }]
+  }, {
+    "id": "5d22a3ce-2390-4b6f-9b9e-4c72e7fed8fd",
+    "name": "Inscription OK",
+    "commands": [{
+      "id": "0e842b90-61ae-4b75-b8d8-6d0167669cd5",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0ec3c3f-83b2-4542-ad67-a4c96962e28c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "969d822d-aeab-4d94-b974-c17d3146bb92",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerNom",
+      "targets": [
+        ["id=registerNom", "id"],
+        ["css=#registerNom", "css:finder"],
+        ["xpath=//input[@id='registerNom']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4c7baa6-1269-46d5-b145-7ee4c2a16d91",
+      "comment": "",
+      "command": "type",
+      "target": "id=registerNom",
+      "targets": [
+        ["id=registerNom", "id"],
+        ["css=#registerNom", "css:finder"],
+        ["xpath=//input[@id='registerNom']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "deprez"
+    }, {
+      "id": "f4a4e267-15b9-4759-b7fb-b229e888f691",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerEmail",
+      "targets": [
+        ["id=registerEmail", "id"],
+        ["css=#registerEmail", "css:finder"],
+        ["xpath=//input[@id='registerEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18269cce-aaa0-4799-9c00-fcc61e244dc2",
+      "comment": "",
+      "command": "type",
+      "target": "id=registerEmail",
+      "targets": [
+        ["id=registerEmail", "id"],
+        ["css=#registerEmail", "css:finder"],
+        ["xpath=//input[@id='registerEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "tomdeprez@test.fr"
+    }, {
+      "id": "6fcccfd7-0a47-48bc-8c1f-bf671444e643",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerPassword",
+      "targets": [
+        ["id=registerPassword", "id"],
+        ["css=#registerPassword", "css:finder"],
+        ["xpath=//input[@id='registerPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13ba54c8-b8b9-4b9e-87df-e41721e2d596",
+      "comment": "",
+      "command": "type",
+      "target": "id=registerPassword",
+      "targets": [
+        ["id=registerPassword", "id"],
+        ["css=#registerPassword", "css:finder"],
+        ["xpath=//input[@id='registerPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "45cd7c6f-b277-48f6-b171-0f96d4ea6e6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerPasswordConfirm",
+      "targets": [
+        ["id=registerPasswordConfirm", "id"],
+        ["css=#registerPasswordConfirm", "css:finder"],
+        ["xpath=//input[@id='registerPasswordConfirm']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15ecf17f-0c2d-4952-be5e-5fbc0116753a",
+      "comment": "",
+      "command": "type",
+      "target": "id=registerPasswordConfirm",
+      "targets": [
+        ["id=registerPasswordConfirm", "id"],
+        ["css=#registerPasswordConfirm", "css:finder"],
+        ["xpath=//input[@id='registerPasswordConfirm']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "4a9af3ed-374b-47b5-91ac-b7e9a65b9f8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf836143-56d6-4e16-97e6-184a9c251cf7",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerSuccess",
+      "targets": [
+        ["id=registerSuccess", "id"],
+        ["css=#registerSuccess", "css:finder"],
+        ["xpath=//div[@id='registerSuccess']", "xpath:attributes"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "Inscription réussie. Redirection vers la page d'accueil."
+    }]
+  }, {
+    "id": "45fd75d6-49ef-4b11-b307-e5250bea6358",
+    "name": "Inscription KO",
+    "commands": [{
+      "id": "bb8e9e9c-3745-4906-b90a-1b3c0f9185e0",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/Projet-testeur-logciel-TP/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7dd49da-1ce5-4059-a011-813eca47bb8c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42307246-37f7-4854-8cb2-13f748456685",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerNom",
+      "targets": [
+        ["id=registerNom", "id"],
+        ["css=#registerNom", "css:finder"],
+        ["xpath=//input[@id='registerNom']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1667d60-d93f-4537-9121-bd087d350c71",
+      "comment": "",
+      "command": "type",
+      "target": "id=registerNom",
+      "targets": [
+        ["id=registerNom", "id"],
+        ["css=#registerNom", "css:finder"],
+        ["xpath=//input[@id='registerNom']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "deprez"
+    }, {
+      "id": "953887ae-2230-450c-a098-f1413c5c8c36",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerEmail",
+      "targets": [
+        ["id=registerEmail", "id"],
+        ["css=#registerEmail", "css:finder"],
+        ["xpath=//input[@id='registerEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1ed6570-1724-4840-a1f5-52fc8ceddc85",
+      "comment": "",
+      "command": "type",
+      "target": "id=registerEmail",
+      "targets": [
+        ["id=registerEmail", "id"],
+        ["css=#registerEmail", "css:finder"],
+        ["xpath=//input[@id='registerEmail']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "tomdeprez@test.fr"
+    }, {
+      "id": "bd6f9c6f-8f6f-4d78-9d21-a853d253ca80",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerPassword",
+      "targets": [
+        ["id=registerPassword", "id"],
+        ["css=#registerPassword", "css:finder"],
+        ["xpath=//input[@id='registerPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d331eccd-4d03-4fe5-9984-bb195c8514b2",
+      "comment": "",
+      "command": "type",
+      "target": "id=registerPassword",
+      "targets": [
+        ["id=registerPassword", "id"],
+        ["css=#registerPassword", "css:finder"],
+        ["xpath=//input[@id='registerPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "ed88eda7-b468-4af8-a78e-e1d775aea428",
+      "comment": "",
+      "command": "click",
+      "target": "id=registerPasswordConfirm",
+      "targets": [
+        ["id=registerPasswordConfirm", "id"],
+        ["css=#registerPasswordConfirm", "css:finder"],
+        ["xpath=//input[@id='registerPasswordConfirm']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8986996d-4d8a-4471-9898-339c112488f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=registerPasswordConfirm",
+      "targets": [
+        ["id=registerPasswordConfirm", "id"],
+        ["css=#registerPasswordConfirm", "css:finder"],
+        ["xpath=//input[@id='registerPasswordConfirm']", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "123456789"
+    }, {
+      "id": "4d788b1e-198b-44ce-8544-aa247f74abff",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='registerForm']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c74fc39-049c-4207-b86e-0c59e0004d63",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=registerError",
+      "targets": [],
+      "value": "Les mots de passe ne correspondent pas."
+    }]
+  }],
+  "suites": [{
+    "id": "edfd1d05-a600-4379-9758-c8b89d0cbaa2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["072263ad-64f3-4bc2-b000-825b6566a618", "035c409d-6800-4519-b3d4-43b5bbd15428", "45fd75d6-49ef-4b11-b307-e5250bea6358", "5d22a3ce-2390-4b6f-9b9e-4c72e7fed8fd"]
+  }],
+  "urls": ["http://localhost/Projet-testeur-logciel-TP/"],
+  "plugins": []
+}
