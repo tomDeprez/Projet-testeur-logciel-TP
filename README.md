@@ -1,4 +1,4 @@
-# Projet Testeur Logiciel - TP
+# Projet Testeur Logiciel - TP.
 
 ## Exercice 1: Fonctionnalités de Connexion et d'Inscription
 
