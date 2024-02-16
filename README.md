@@ -1,6 +1,7 @@
 # Projet Testeur Logiciel - TP.
 
 ## Exercice 1: Fonctionnalités de Connexion et d'Inscription
+![2024-02-15_17h25_45](https://github.com/tomDeprez/Projet-testeur-logciel-TP/assets/50340861/2d32048c-4ad7-41cb-871b-7f1bb775543e)
 
 ### Début
 L'utilisateur arrive sur la page d'accueil et a le choix entre "Se connecter" et "S'inscrire".
@@ -24,6 +25,8 @@ L'utilisateur choisit soit de se connecter soit de s'inscrire.
 L'utilisateur est soit connecté et redirigé vers sa page d'accueil, soit en train de corriger ses informations d'inscription.
 
 ## Exercice 2: Fonctionnalité de Gestion de Commandes avec Validation et Confirmation
+![2024-02-15_17h28_39](https://github.com/tomDeprez/Projet-testeur-logciel-TP/assets/50340861/54f32213-78f2-4c33-b9be-b4c3973a01dc)
+![2024-02-15_17h28_32](https://github.com/tomDeprez/Projet-testeur-logciel-TP/assets/50340861/598e1d83-26a2-4fd0-aa23-258a3e616b63)
 
 ### Contexte
 Vous travaillez sur un système e-commerce qui permet aux utilisateurs de passer des commandes pour différents produits. La fonctionnalité de gestion de commandes inclut la sélection de produits, la validation du panier, le choix des options de livraison, et la confirmation de la commande avec un résumé des coûts.
