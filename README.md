@@ -1,4 +1,4 @@
-# Projet Testeur Logiciel - TP.
+# Projet Testeur Logiciel - TP..
 
 ## Exercice 1: Fonctionnalités de Connexion et d'Inscription
 ![2024-02-15_17h25_45](https://github.com/tomDeprez/Projet-testeur-logciel-TP/assets/50340861/2d32048c-4ad7-41cb-871b-7f1bb775543e)
